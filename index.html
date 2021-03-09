@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button onmousedown="printArr();">Print Array of arrays</button>
+    <button onmousedown="sumProduct();">Array sumUp and Product</button>
+
+
+    <script>
+   function printArr(){
+const num = [[1, 2, 1, 24], [8, 11, 9, 4], [7, 0, 7, 27], [7, 4, 28, 14], [3, 10, 26, 7]];
+
+for(var i = 0; i < num.length; i++){
+    for(var j = 0; j < num[i].length; j++){
+        document.write(`${num[i][j]}</br>`);
+    }
+}
+   }
+    
+    
+   function sumProduct(){
+    var arrOfInt = [6, 4, 2, 7, 2, 3, 9, 4];
+    var sum = 0;
+    var product = 1;
+
+    for(var i = 0; i < arrOfInt.length; i++){
+        sum = sum + arrOfInt[i];
+        product = product * arrOfInt[i];
+    }
+
+    document.write(`${sum}</br>`);
+    document.write(`${product}`);
+    
+   }
+    
+    </script>
+</body>
+</html>
